@@ -61,9 +61,9 @@ const About = () => {
         </p>
       </div>
 
-      {/* VISION + MISSION */}
-      <div className="bg-cyan-50 space-y-6">
-        <div className="border-b-2 border-gray-700">
+      
+      <div className="bg-cyan-50 space-y-20 pt-10 pb-10">
+        <div className="border-b-2 border-gray-700 ">
           <div className="flex flex-col md:flex-row md:justify-between gap-4 p-6 md:p-10 text-gray-700">
             <p className="font-semibold">VISION</p>
             <p className="leading-relaxed md:max-w-3xl">
@@ -74,16 +74,15 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 md:items-start p-6 md:p-10 text-gray-700">
+        <div className="flex flex-col md:flex-row gap-4 md:items-start p-6 md:p-10 text-gray-700 justify-between ">
           <p className="font-semibold">MISSION</p>
           <p className="leading-relaxed md:max-w-4xl">
-            Our mission is to improve and transform lives through compassionate
-            and comprehensive healthcare services…
+            Our mission is to improve and transform lives through compassionate and comprehensive healthcare services. We are committed to delivering exceptional medical care, promoting wellness, and advancing medical knowledge through innovation and research. We strive to be the trusted partner in our community's health and well-being.
           </p>
         </div>
       </div>
 
-      <NeedHealp />
+      < NeedHealp />
       <Footer />
     </div>
   )
