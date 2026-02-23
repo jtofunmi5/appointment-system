@@ -58,7 +58,7 @@ const Register = () => {
     setMessage("");
 
     try {
-      await axios.post("http://localhost:5000/api/users/register", {
+      await axios.post("https://appointment-system-23dg.onrender.com/api/users/register", {
         name: formData.name,
         email: formData.email,
         password: formData.password,

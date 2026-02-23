@@ -23,7 +23,7 @@ export default function UserDashboard() {
   //   const fetchAppointments = async () => {
   //     try {
   //       const response = await fetch(
-  //         "http://localhost:5000/api/appointments/user-appointments",
+  //         "https://appointment-system-23dg.onrender.com/api/appointments/user-appointments",
   //       );
   //       if (!response.ok) throw new Error("Failed to fetch appointments");
   //       const data = await response.json();
@@ -43,7 +43,7 @@ export default function UserDashboard() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/appointments/user-appointments",
+          "https://appointment-system-23dg.onrender.com/api/appointments/user-appointments",
           {
             headers: {
               Authorization: `Bearer ${token}`,

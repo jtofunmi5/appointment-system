@@ -54,7 +54,7 @@ export default function BookAppointment() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://localhost:5000/api/appointments/create-appointment",
+        "https://appointment-system-23dg.onrender.com/api/appointments/create-appointment",
         {
           method: "POST",
           headers: {
