@@ -3,16 +3,17 @@ import Button from "./Button";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 import { Link } from "react-router-dom";
+import heroImage from "../assets/heroImage.png"
 
 const Transforming = () => {
   return (
     <div className="relative w-full h-screen min-h-[600px]">
-      {/* Background Image */}
+
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url("src/assets/heroImage.png")',
+            `url(${heroImage})`
         }}
       >
         {/* Overlay */}

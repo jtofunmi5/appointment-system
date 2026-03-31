@@ -1,6 +1,6 @@
 import React from 'react'
 import PrimaryCard from './PrimaryCard'
-import pcImagetwo from '../assets/pcPtwo.png'
+import pcPtwo from '../assets/pcPtwo.png'
 import pcPone from '../assets/pcPone.png'
 import pcPthree from '../assets/pcPthree.png'
 
@@ -43,7 +43,7 @@ const Primary = () => {
             title='Family Medicine' 
             text='Our team of experienced physicians provides comprehensive medical care for individuals and families.' 
             link='Learn More' 
-            image='{pcPthree}'
+            image={pcPtwo}
           />
         </div>
           
