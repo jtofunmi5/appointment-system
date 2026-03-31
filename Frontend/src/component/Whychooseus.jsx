@@ -1,5 +1,5 @@
 import React from 'react'
-import whychooseImage from '../assets/whychoose.png'
+import whychooseImage from '../assets/whyChoose.png'
 
 const Whychooseus = () => {
   return (
@@ -35,4 +35,4 @@ const Whychooseus = () => {
   )
 }
 
-export default Whychooseus
+export default Whychooseus;
