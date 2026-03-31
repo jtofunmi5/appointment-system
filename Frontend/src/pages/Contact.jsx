@@ -3,6 +3,7 @@ import Emergency from '../component/Emergency';
 import Navbar from '../ExternalComponent/Navbar';
 import Form_Card from '../ExternalComponent/Form_Card'
 import Footer from '../component/Footer';
+import contactImage from '../assets/contactImage.png'
 
 const Contact = () => {
   return (
@@ -16,7 +17,7 @@ const Contact = () => {
           className="bg-center bg-cover absolute inset-0"
           style={{
             backgroundImage:
-              'url(src/assets/contactImage.png)',
+              `url(${contactImage})`,
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>

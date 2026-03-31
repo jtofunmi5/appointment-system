@@ -8,9 +8,10 @@ import Take from '../component/Take'
 import Whychooseus from '../component/Whychooseus'
 import OurTeam from '../component/OurTeam'
 import ReviewPage from '../component/ReviewPage'
-import NeedHealp from '../ExternalComponent/NeedHealp'
+import NeedHelp from '../ExternalComponent/NeedHelp'
 import Footer from '../component/Footer'
 import Navbar from '../ExternalComponent/Navbar'
+
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
      <Whychooseus />
      <OurTeam />
      <ReviewPage />
-     <NeedHealp />
+     <NeedHelp />
      <Footer />
     </div>
   )

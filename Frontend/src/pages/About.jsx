@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from '../ExternalComponent/Navbar';
 import Emergency from '../component/Emergency';
-import NeedHealp from '../ExternalComponent/NeedHealp';
+import NeedHealp from '../ExternalComponent/NeedHelp';
 import Footer from '../component/Footer';
 import aboutusimage from '../assets/aboutImage.png'
+import aboutimage2 from '../assets/aboutimage2.png'
 
 const About = () => {
   return (
@@ -12,13 +13,13 @@ const About = () => {
       <Navbar />
 
      
-      <div className="w-full relative h-64 sm:h-80 md:h-[28rem]">
+      <div className="w-full relative h-64 sm:h-80 md:h-[28rem] bg-gray-100 overflow-hidden rounded-2xl">
         <div
-          className="bg-center bg-cover absolute inset-0"
-          style={{
-            backgroundImage:`url(${aboutusimage})`
-              
-          }}
+         className="absolute inset-0 bg-cover bg-top bg-no-repeat" 
+            style={{
+           backgroundImage: `url(${aboutusimage})`,
+            backgroundPosition: 'center 20%' 
+         }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
@@ -43,7 +44,7 @@ const About = () => {
       <div className="flex justify-center px-4 sm:px-8 md:px-12 py-6">
         <img
           className="w-full max-w-5xl border rounded-3xl"
-          src="src/assets/aboutImage2.png"
+          src={aboutimage2}
           alt="hospital"
         />
       </div>

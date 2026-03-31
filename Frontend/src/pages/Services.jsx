@@ -1,11 +1,18 @@
 import React from "react";
 import Emergency from "../component/Emergency";
 import Navbar from "../ExternalComponent/Navbar";
-import NeedHealp from "../ExternalComponent/NeedHealp";
+import NeedHealp from "../ExternalComponent/NeedHelp";
 import Footer from "../component/Footer";
 import Take from "../component/Take";
 import PrimaryCard from "../component/PrimaryCard";
 import Card from "../component/Cards";
+import serviceProvided from '../assets/servicesProvided.png'
+import advanceClinical1 from '../assets/advanceClinical1.png'
+import pcPone from '../assets/pcPone.png'
+import advanceClinical2 from '../assets/advanceClinical2.png'
+import pcPtwo from '../assets/pcPtwo.png'
+import advanceClinical3 from '../assets/advanceClinical3.png'
+import pcPthree from '../assets/pcPthree.png'
 
 const Services = () => {
   return (
@@ -18,7 +25,7 @@ const Services = () => {
           className="bg-center bg-cover absolute inset-0"
           style={{
             backgroundImage:
-              "url(src/assets/servicesProvided.png)",
+              `url(${serviceProvided})`,
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
@@ -37,39 +44,43 @@ const Services = () => {
             title="General Medical Consultations"
             text="Whether you need joint replacements or sports injury treatments, our skilled orthopedic surgeons and staff are here to help you on the path to recovery at General Hospital."
             link="Learn More"
-            image="src/assets/advanceClinical1.png"
+            image={advanceClinical1}
           />
 
           <PrimaryCard
             title="Counseling & Mental Health Services"
             text="Our state-of-the-art facility offers comprehensive dental care with an emphasis on patient comfort and satisfaction."
             link="Learn More"
-            image="src/assets/pcPone.png"
+            image={pcPone}
           />
 
           <PrimaryCard
             title="Comprehensive Inpatient Care"
             text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
             link="Learn More"
-            image="src/assets/advanceClinical2.png"          />
+            image={advanceClinical2}     
+           />
 
           <PrimaryCard
             title="Pathology & Advanced Diagnostics"
             text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
             link="Learn More"
-            image="src/assets/pcPtwo.png"          />
+            image={pcPtwo}
+             />
 
           <PrimaryCard
             title="Medical Imaging & Radiology"
             text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
             link="Learn More"
-            image="src/assets/advanceClinical3.png"          />
+            image={advanceClinical3}    
+             />
 
           <PrimaryCard
             title="Internal Medicine & Chronic Care"
             text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
             link="Learn More"
-            image="src/assets/pcPtwo.png"       />
+            image={pcPthree}   
+         />
         </div>
       </div>
 

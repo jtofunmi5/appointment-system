@@ -1,4 +1,5 @@
 import React from 'react'
+import Need from '../assets/NeedHelp.png'
 
 const NeedHelp = () => {
   return (
@@ -8,7 +9,7 @@ const NeedHelp = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url(src/assets/needHelp.png)',
+            `url(${Need})`,
         }}
       ></div>
 
