@@ -4,7 +4,7 @@ import Emergency from '../component/Emergency';
 import NeedHealp from '../ExternalComponent/NeedHelp';
 import Footer from '../component/Footer';
 import aboutusimage from '../assets/aboutImage.png'
-import aboutimage2 from '../assets/aboutimage2.png'
+import aboutimage2 from '../assets/aboutImage2.png'
 
 const About = () => {
   return (
