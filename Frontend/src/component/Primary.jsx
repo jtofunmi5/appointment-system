@@ -1,6 +1,8 @@
 import React from 'react'
 import PrimaryCard from './PrimaryCard'
 import pcImagetwo from '../assets/pcPtwo.png'
+import pcPone from '../assets/pcPone.png'
+import pcPthree from '../assets/pcPthree.png'
 
 import Card from './PrimaryCard'
 
@@ -23,7 +25,7 @@ const Primary = () => {
             title='Medical Advancements' 
             text='Our state-of-the-art facility offers comprehensive dental care with an emphasis on patient comfort and satisfaction' 
             link='Learn More' 
-            image='/src/assets/pcPone.png'
+            image={pcPone}
           />
         </div>
 
@@ -32,7 +34,7 @@ const Primary = () => {
             title='Counselling' 
             text='Our qualified therapists provide personalized counselling services to help you overcome lifes challenges' 
             link='Learn More' 
-            image={pcImagetwo}
+            image={pcPthree}
           />
         </div>
 
@@ -41,7 +43,7 @@ const Primary = () => {
             title='Family Medicine' 
             text='Our team of experienced physicians provides comprehensive medical care for individuals and families.' 
             link='Learn More' 
-            image='/src/assets/pcPthree.png'
+            image='{pcPthree}'
           />
         </div>
           

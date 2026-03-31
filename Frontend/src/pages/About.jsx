@@ -11,7 +11,7 @@ const About = () => {
       <Emergency />
       <Navbar />
 
-      {/* HERO */}
+     
       <div className="w-full relative h-64 sm:h-80 md:h-[28rem]">
         <div
           className="bg-center bg-cover absolute inset-0"
@@ -30,7 +30,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* INTRO TEXT */}
+    
       <div className="leading-relaxed font-normal text-base sm:text-lg md:text-2xl lg:text-3xl px-4 sm:px-8 md:px-10 lg:px-16 py-6">
         <h4>
           We are committed to providing exceptional patient care and promoting
@@ -39,7 +39,7 @@ const About = () => {
         </h4>
       </div>
 
-      {/* IMAGE */}
+      
       <div className="flex justify-center px-4 sm:px-8 md:px-12 py-6">
         <img
           className="w-full max-w-5xl border rounded-3xl"
@@ -48,7 +48,7 @@ const About = () => {
         />
       </div>
 
-      {/* DESCRIPTION SECTIONS */}
+     
       <div className="space-y-6 px-4 sm:px-8 md:px-12 lg:px-20 py-6 text-sm sm:text-base md:text-lg leading-relaxed">
         <p>
           General Hospital is a luxury medical facility that is dedicated to
