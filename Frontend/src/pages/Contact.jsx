@@ -16,7 +16,7 @@ const Contact = () => {
           className="bg-center bg-cover absolute inset-0"
           style={{
             backgroundImage:
-              'url(https://i.pinimg.com/1200x/00/0f/12/000f1297367b6a2f5f2218fc9112c985.jpg)',
+              'url(src/assets/contactImage.png)',
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>

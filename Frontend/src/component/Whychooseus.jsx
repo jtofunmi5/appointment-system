@@ -1,4 +1,5 @@
 import React from 'react'
+import whychooseImage from '../assets/whychoose.png'
 
 const Whychooseus = () => {
   return (
@@ -27,7 +28,8 @@ const Whychooseus = () => {
     </div>
 
         <div className='w-full lg:w-1/2'>
-            <img className='rounded-3xl w-full h-auto object-cover' src='https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/why-us.jpg' alt='Medical staff consultation' />
+            <img className='rounded-3xl w-full h-auto object-cover'
+            src={whychooseImage} alt='Medical staff consultation' />
         </div>
 </div>
   )

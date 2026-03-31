@@ -12,7 +12,7 @@ const Transforming = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url("https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/home-bg.jpg")',
+            'url("src/assets/heroImage.png")',
         }}
       >
         {/* Overlay */}
@@ -50,7 +50,7 @@ const Transforming = () => {
           {/* Phone */}
           <div className="flex items-center space-x-2">
             <IoIosCall className="text-base sm:text-lg flex-shrink-0" />
-            <p>(+234) 807 390 3035</p>
+            <p>(406) 555-0120</p>
           </div>
         </div>
       </div>

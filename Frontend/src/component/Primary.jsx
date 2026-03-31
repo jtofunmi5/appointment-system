@@ -1,5 +1,9 @@
 import React from 'react'
 import PrimaryCard from './PrimaryCard'
+import pcImagetwo from '../assets/pcPtwo.png'
+
+import Card from './PrimaryCard'
+
 
 const Primary = () => {
   return (
@@ -19,7 +23,7 @@ const Primary = () => {
             title='Medical Advancements' 
             text='Our state-of-the-art facility offers comprehensive dental care with an emphasis on patient comfort and satisfaction' 
             link='Learn More' 
-            image='https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/service-03.jpg'
+            image='/src/assets/pcPone.png'
           />
         </div>
 
@@ -28,7 +32,7 @@ const Primary = () => {
             title='Counselling' 
             text='Our qualified therapists provide personalized counselling services to help you overcome lifes challenges' 
             link='Learn More' 
-            image='https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/service-04.jpg' 
+            image={pcImagetwo}
           />
         </div>
 
@@ -37,11 +41,14 @@ const Primary = () => {
             title='Family Medicine' 
             text='Our team of experienced physicians provides comprehensive medical care for individuals and families.' 
             link='Learn More' 
-            image='https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/service-05.jpg'
+            image='/src/assets/pcPthree.png'
           />
         </div>
-
+          
+          
       </div>
+
+      
     </div>
   )
 }

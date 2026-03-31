@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 
 const Take = () => {
   return (
@@ -7,10 +8,15 @@ const Take = () => {
         <p className='font-bold text-2xl md:text-4xl text-white text-center md:text-left'>
             Take the first step towards better health. Book your appointment now!
         </p>
-
+      <Link to="/bookappointment">
         <Button body='Book An Appointment' />
+      </Link>
+        
     </div>
   )
 }
 
 export default Take
+
+
+

@@ -8,7 +8,7 @@ const NeedHelp = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url(https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/footer-bg.jpg)',
+            'url(src/assets/needHelp.png)',
         }}
       ></div>
 

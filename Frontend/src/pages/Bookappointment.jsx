@@ -132,7 +132,7 @@ export default function BookAppointment() {
               </div>
             </div>
 
-            {/* Date Picker */}
+           
             <div>
               <label className="block text-lg font-medium text-gray-700 mb-2">
                 Choose a Date
@@ -145,7 +145,6 @@ export default function BookAppointment() {
               />
             </div>
 
-            {/* Time Slots */}
             <div>
               <label className="block text-lg font-medium text-gray-700 mb-3">
                 Select a Time
@@ -169,7 +168,7 @@ export default function BookAppointment() {
               </div>
             </div>
 
-            {/* Submit */}
+          
             <button
               type="submit"
               className="w-full bg-blue-600 text-white text-lg font-semibold py-4 rounded-xl hover:bg-blue-700 transition"

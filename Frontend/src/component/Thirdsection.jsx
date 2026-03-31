@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-
+import aboutImg from '../assets/aboutImage.png'
 const Thirdsection = () => {
   return (
    <div className='bg-blue-50'>
@@ -17,7 +17,7 @@ const Thirdsection = () => {
         <div className='w-full lg:w-1/2 max-w-md mx-auto lg:max-w-none'>
           <img 
             className='rounded-lg sm:rounded-xl w-full h-auto object-cover shadow-lg max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-none' 
-            src='https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/aboutus.jpg' 
+            src={aboutImg} 
             alt='About JBS Hospital'
             loading='lazy'
           />

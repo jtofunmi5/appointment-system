@@ -3,6 +3,7 @@ import Navbar from '../ExternalComponent/Navbar';
 import Emergency from '../component/Emergency';
 import NeedHealp from '../ExternalComponent/NeedHealp';
 import Footer from '../component/Footer';
+import aboutusimage from '../assets/aboutImage.png'
 
 const About = () => {
   return (
@@ -15,8 +16,8 @@ const About = () => {
         <div
           className="bg-center bg-cover absolute inset-0"
           style={{
-            backgroundImage:
-              'url(https://i.pinimg.com/736x/6a/59/ae/6a59aebd11fd08d28aae4ce742ea1678.jpg)',
+            backgroundImage:`url(${aboutusimage})`
+              
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
@@ -42,7 +43,7 @@ const About = () => {
       <div className="flex justify-center px-4 sm:px-8 md:px-12 py-6">
         <img
           className="w-full max-w-5xl border rounded-3xl"
-          src="https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/about-us.jpg"
+          src="src/assets/aboutImage2.png"
           alt="hospital"
         />
       </div>

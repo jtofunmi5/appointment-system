@@ -1,20 +1,38 @@
 import React from 'react';
-import Button from './Button';
 
-const Card = ({title, text, link, image}) => {
+const Card = ({ title, text, link, image }) => {
   return (
-    <div className="group before:hover:scale-95 before: hover:h-72 before:hover:w-80 before:hover:h-44 before:hover:rounded-b-2xl before:transition-all before:duration-500 before:content-[''] before:w-80 before:h-24 before:rounded-t-2xl before:bg-gradient-to-bl from-sky-200 via-orange-200 to-orange-700 before:absolute before:top-0 w-80 h-72 relative bg-slate-50 flex flex-col items-center justify-center gap-2 text-center rounded-2xl overflow-hidden">
-      <div className="w-28 h-28 bg-blue-700 mt-8 rounded-full border-4 border-slate-50 z-10 group-hover:scale-150 group-hover:-translate-x-24 group-hover:-translate-y-20 transition-all duration-500 flex items-center justify-center overflow-hidden">
-  <img
-    src={image}
-    alt="icon"
-    className="w-full h-full object-cover"
-  />
-</div>
-      <div className="z-10 group-hover:-translate-y-10 transition-all duration-500 flex flex-col gap-2">
-        <span className="text-2xl font-semibold">{title}</span>
-        {text}</div>
-      <a className="bg-blue-500 px-4 py-1 text-slate-50 rounded-md z-10 hover:scale-125 transition-all duration-500 hover:bg-blue-500" href="#">{link}</a>
+    <div className="relative w-80 h-[400px] bg-slate-50 rounded-2xl shadow-md overflow-hidden group flex flex-col items-center p-4 transition-all duration-500">
+      
+      {/* Animated Background Header */}
+      <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-bl from-sky-200 via-orange-200 to-orange-400 transition-all duration-500 group-hover:h-32 z-0" />
+
+      {/* Image Container */}
+      <div className="relative z-10 w-full h-44 mt-4 overflow-hidden rounded-xl shadow-lg bg-blue-gray-500 transition-transform duration-500 group-hover:scale-105">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Content Area */}
+      <div className="z-10 mt-6 flex flex-col items-center gap-3 px-2 transition-all duration-500 group-hover:-translate-y-2">
+        <span className="text-xl font-bold text-slate-800">{title}</span>
+        <p className="text-sm text-slate-600 line-clamp-3">
+          {text}
+        </p>
+      </div>
+
+      {/* Action Button */}
+      <div className="mt-auto mb-2 z-10">
+        <a 
+          href={link || "#"} 
+          className="inline-block bg-blue-600 px-6 py-2 text-white text-sm font-medium rounded-lg shadow-md transition-all duration-300 hover:bg-blue-700 hover:scale-110 active:scale-95"
+        >
+          View Details
+        </a>
+      </div>
     </div>
   );
 }

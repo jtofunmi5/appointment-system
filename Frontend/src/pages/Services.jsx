@@ -18,7 +18,7 @@ const Services = () => {
           className="bg-center bg-cover absolute inset-0"
           style={{
             backgroundImage:
-              "url(https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/services-bg.jpg)",
+              "url(src/assets/servicesProvided.png)",
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
@@ -34,25 +34,42 @@ const Services = () => {
       <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-12">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <PrimaryCard
-            title="Orthopedics"
+            title="General Medical Consultations"
             text="Whether you need joint replacements or sports injury treatments, our skilled orthopedic surgeons and staff are here to help you on the path to recovery at General Hospital."
             link="Learn More"
-            image="https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/service-03.jpg"
+            image="src/assets/advanceClinical1.png"
           />
 
           <PrimaryCard
-            title="Counseling"
+            title="Counseling & Mental Health Services"
             text="Our state-of-the-art facility offers comprehensive dental care with an emphasis on patient comfort and satisfaction."
             link="Learn More"
-            image="https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/service-04.jpg"
+            image="src/assets/pcPone.png"
           />
 
           <PrimaryCard
-            title="Dental"
+            title="Comprehensive Inpatient Care"
             text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
             link="Learn More"
-            image="https://websitedemos.net/general-hospital-04/wp-content/uploads/sites/1482/2023/07/service-05.jpg"
-          />
+            image="src/assets/advanceClinical2.png"          />
+
+          <PrimaryCard
+            title="Pathology & Advanced Diagnostics"
+            text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
+            link="Learn More"
+            image="src/assets/pcPtwo.png"          />
+
+          <PrimaryCard
+            title="Medical Imaging & Radiology"
+            text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
+            link="Learn More"
+            image="src/assets/advanceClinical3.png"          />
+
+          <PrimaryCard
+            title="Internal Medicine & Chronic Care"
+            text="Our team of experienced physicians provides comprehensive medical care for individuals and families."
+            link="Learn More"
+            image="src/assets/pcPtwo.png"       />
         </div>
       </div>
 
