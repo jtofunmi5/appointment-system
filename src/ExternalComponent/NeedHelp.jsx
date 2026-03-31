@@ -1,5 +1,5 @@
 import React from 'react'
-import Need from '../assets/NeedHelp.png'
+import Need from '../assets/needHelp.png'
 
 const NeedHelp = () => {
   return (
