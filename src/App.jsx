@@ -1,18 +1,25 @@
+import React, {Suspense, lazy} from "react"
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import BookAppointment from "./pages/Bookappointment";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import UserDashboard from "./pages/UserDashboard";
+
+import AppointmentLoader from "./component/AppointmentLoader";
+
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Home = lazy(() => import("./pages/Home"));
+const Services = lazy(() => import("./pages/Services"));
+const BookAppointment = lazy(() => import("./pages/Bookappointment"));
+const Register = lazy(() => import("./pages/Register"));
+const Login = lazy(() => import("./pages/Login"));
+const UserDashboard = lazy(() => import("./pages/UserDashboard"));
+
+const AppointmentPage = lazy(() => import('./component/AppointmentLoader'));
 
 function App() {
   return (
     <div>
-      <Routes>
+      <Suspense fallback = {<AppointmentLoader/>} >
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
@@ -22,6 +29,8 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="dashboard" element={<UserDashboard />} />
       </Routes>
+    </Suspense>
+     
     </div>
   );
 }
