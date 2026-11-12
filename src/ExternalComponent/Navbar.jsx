@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Button from "../component/Button";
+import Jbs_logo from "../assets/jbs_logo.png" 
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
     <nav className="shadow-2xl bg-white">
       <div className="flex justify-between items-center p-6">
         <img
-          src="https://jbsgerontologycentre.com/wp-content/uploads/2024/10/jbs_logo.png"
+          src={Jbs_logo}
           alt="jbsLogo"
           className="h-10 md:h-12"
         />

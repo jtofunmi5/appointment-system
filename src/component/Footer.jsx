@@ -1,5 +1,6 @@
  import React from 'react'
 import { BiCopyright } from 'react-icons/bi'
+import Jbslogo from "../assets/jbs_logo.png"
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
         <div className='space-y-2'>
           <img
             className='w-36'
-            src='https://jbsgerontologycentre.com/wp-content/uploads/2024/10/jbs_logo.png'
+            src={Jbslogo}
             alt='logo'
           />
           <p>1234 Washington Ave. Manchester,<br />Kentucky 39495.</p>
